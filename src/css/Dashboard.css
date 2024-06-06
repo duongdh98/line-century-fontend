@@ -1,0 +1,45 @@
+.screen {
+  display: grid;
+  grid-auto-flow: row;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 30px 1fr 30px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.screen .head, .screen .main, .screen .footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+.main__chart {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 70px 1fr;
+}
+.main__chart__head, .main__chart__main {
+  background: rgba(0, 0, 0, 0.8);
+}
+.main__chart__head {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 10px;
+  align-content: center;
+  padding-right: 20px;
+}
+.main__chart__head .MuiFormControl-root, .main__chart__head .MuiTextField-root {
+  outline: none;
+}
+.main__chart__head .MuiFormControl-root .Mui-focused, .main__chart__head .MuiTextField-root .Mui-focused {
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+.main__chart__head .MuiFormControl-root .MuiFormLabel-root, .main__chart__head .MuiTextField-root .MuiFormLabel-root {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 10 !important;
+}
+.main__chart__head .MuiFormControl-root .MuiButtonBase-root, .main__chart__head .MuiTextField-root .MuiButtonBase-root {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main__chart__head .MuiFormControl-root .MuiInputBase-input, .main__chart__head .MuiTextField-root .MuiInputBase-input {
+  color: rgba(255, 255, 255, 0.7);
+}/*# sourceMappingURL=Dashboard.css.map */

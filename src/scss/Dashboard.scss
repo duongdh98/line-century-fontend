@@ -1,0 +1,63 @@
+.screen {
+    display: grid;
+    grid-auto-flow: row;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 30px 1fr 30px;
+    background: rgba(0, 0, 0, 0.8);
+    .head, .main, .footer {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .head {
+
+    }
+    .main {
+        &__chart {
+
+        }
+    }
+    .footer {
+
+    }
+}
+// 
+.main {
+    &__chart {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 70px 1fr;
+        &__head, &__main {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        &__head {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: end;
+            gap: 10px;
+            align-content: center;
+            padding-right: 20px;
+            .MuiFormControl-root, .MuiTextField-root {
+                outline: none;
+                .MuiOutlinedInput-root{
+                }
+                .Mui-focused {
+                    color: rgb(255, 255, 255, 0.7);
+                    outline: none;
+                }
+                .MuiFormLabel-root {
+                    color: rgb(255, 255, 255, 0.8);
+                    z-index: 10 !important;
+                }
+                .MuiButtonBase-root {
+                    color: rgb(255, 255, 255, 0.7);
+                }
+                .MuiInputBase-input {
+                    color: rgb(255, 255, 255, 0.7);
+                }
+            }
+        }
+        &__main {
+        }
+    }
+}
